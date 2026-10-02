@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entrar — BANCO CODE</title>
+
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- LADO ESQUERDO -->
+
+    <section class="brand-side">
+
+      <a href="index.html" class="logo">
+        <span>CD</span>
+        BANCO<span>CODE</span>
+      </a>
+
+      <div class="brand-content">
+
+        <div class="security-badge">
+          <span>✓</span>
+          AMBIENTE SEGURO
+        </div>
+
+        <h1>
+          Bem-vindo<br>
+          de volta.
+        </h1>
+
+        <p>
+          Acesse sua conta e tenha controle completo
+          sobre suas operações financeiras.
+        </p>
+
+        <div class="benefits">
+
+          <div>
+            <span>✓</span>
+            <p>
+              <strong>Controle sua conta</strong>
+              Acompanhe seus movimentos em tempo real.
+            </p>
+          </div>
+
+          <div>
+            <span>✓</span>
+            <p>
+              <strong>Transferências rápidas</strong>
+              Envie dinheiro de forma simples.
+            </p>
+          </div>
+
+          <div>
+            <span>✓</span>
+            <p>
+              <strong>Segurança</strong>
+              Proteção para suas operações.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="side-footer">
+        © 2026 BANCO CODE
+      </div>
+
+    </section>
+
+
+    <!-- LADO DIREITO -->
+
+    <section class="login-side">
+
+      <div class="login-container">
+
+        <div class="mobile-logo">
+          <span>CD</span>
+          BANCO<span>CODE</span>
+        </div>
+
+        <div class="login-header">
+
+          <div class="login-icon">
+            →
+          </div>
+
+          <h2>
+            Entrar na sua conta
+          </h2>
+
+          <p>
+            Insira seus dados para continuar.
+          </p>
+
+        </div>
+
+
+        <form id="loginForm">
+
+          <div class="form-group">
+
+            <label>
+              Número da conta
+            </label>
+
+            <input
+              type="text"
+              id="account"
+              placeholder="Ex: 0001234567"
+              autocomplete="off"
+              required
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <div class="password-label">
+
+              <label>
+                Palavra-passe
+              </label>
+
+              <a href="#" onclick="forgotPassword(event)">
+                Esqueceu a palavra-passe?
+              </a>
+
+            </div>
+
+            <div class="password-box">
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua palavra-passe"
+                required
+              >
+
+              <button
+                type="button"
+                onclick="togglePassword()"
+                id="eyeButton"
+              >
+                ◉
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <label class="remember">
+
+            <input
+              type="checkbox"
+              id="remember"
+            >
+
+            <span>
+              Lembrar deste dispositivo
+            </span>
+
+          </label>
+
+
+          <button
+            type="submit"
+            class="login-button"
+          >
+            Entrar
+            <span>→</span>
+          </button>
+
+        </form>
+
+
+        <div class="divider">
+          <span>ou</span>
+        </div>
+
+
+        <button
+          class="alternative-button"
+          onclick="showDemo()"
+        >
+          Entrar com código de acesso
+        </button>
+
+
+        <p class="new-client">
+
+          Ainda não é cliente?
+
+          <a href="index.html">
+            Abrir uma conta
+          </a>
+
+        </p>
+
+
+        <div class="demo-warning">
+
+          <span>ⓘ</span>
+
+          <p>
+            <strong>Ambiente de demonstração</strong><br>
+            Este site é uma simulação. Não introduza
+            dados bancários reais.
+          </p>
+
+        </div>
+
+
+        <div class="login-footer">
+
+          <span>Privacidade</span>
+          <span>Termos</span>
+          <span>Ajuda</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <div id="toast"></div>
+
+
+  <script src="login.js"></script>
+
+</body>
+</html>

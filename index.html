@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Code— Banco Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <a class="brand" href="#">
+    <span class="brand-mark">CD</span>
+    <span>BANCO<span>CODE</span></span>
+  </a>
+
+  <nav>
+    <a class="active" href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="ghost-btn" onclick="openLogin()">Entrar</button>
+    <!--button class="primary-btn" onclick="openAccount()">Abrir conta</button-->
+    <button class="primary-btn">Abrir conta</button>
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="hero" id="inicio">
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      <span></span>
+      BANCO CODE
+    </div>
+
+    <h1>
+      Seu dinheiro.<br>
+      <strong>Seu controle.</strong>
+    </h1>
+
+    <p>
+      Uma experiência bancária simples, rápida e segura.
+      Controle sua conta, envie dinheiro e acompanhe seus
+      movimentos num só lugar.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="primary-btn large" onclick="openAccount()">
+        Começar agora <b>→</b>
+      </button>
+
+      <button class="text-btn" onclick="scrollToSection('servicos')">
+        Conhecer o BANCO CODE
+      </button>
+
+    </div>
+
+    <div class="trust-row">
+
+      <div>
+        <b>24/7</b>
+        <span>acesso à conta</span>
+      </div>
+
+      <div>
+        <b>100%</b>
+        <span>digital</span>
+      </div>
+
+      <div>
+        <b>0 Kz</b>
+        <span>na abertura</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+    <div class="glow"></div>
+
+    <div class="bank-card">
+
+      <div class="card-top">
+        <span>BANCO CODE</span>
+        <span class="chip"></span>
+      </div>
+
+      <div class="card-number">
+        •••• &nbsp; •••• &nbsp; 4821
+      </div>
+
+      <div class="card-bottom">
+
+        <div>
+          <small>TITULAR</small>
+          <strong>MARCELO</strong>
+        </div>
+
+        <div>
+          <small>VALIDADE</small>
+          <strong>08/30</strong>
+        </div>
+
+        <div class="contactless">
+          )))
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="floating-balance">
+
+      <div class="mini-icon">
+        Kz
+      </div>
+
+      <div>
+        <small>Saldo disponível</small>
+        <strong>1.250.450,00 Kz</strong>
+      </div>
+
+      <span class="up">
+        +8,4%
+      </span>
+
+    </div>
+
+
+    <div class="floating-transfer">
+
+      <div class="check">
+        ✓
+      </div>
+
+      <div>
+        <small>Transferência concluída</small>
+        <strong>+ 75.000 Kz</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="stats" id="servicos">
+
+  <div>
+    <strong>Conta digital</strong>
+    <span>Tenha tudo num único lugar.</span>
+  </div>
+
+  <div>
+    <strong>Transferências</strong>
+    <span>Envie e receba dinheiro facilmente.</span>
+  </div>
+
+  <div>
+    <strong>Cartão virtual</strong>
+    <span>Seu cartão sempre à mão.</span>
+  </div>
+
+  <div>
+    <strong>Segurança</strong>
+    <span>Proteção em cada operação.</span>
+  </div>
+
+</section>
+
+<section class="features">
+
+  <div class="section-heading">
+
+    <span>EXPERIÊNCIA NOVA</span>
+
+    <h2>
+      Feito para você<br>
+      ter mais controle.
+    </h2>
+
+  </div>
+
+  <div class="feature-grid">
+
+    <article class="feature-card dark">
+
+      <div class="feature-icon">
+        ↗
+      </div>
+
+      <h3>
+        Movimente seu dinheiro
+      </h3>
+
+      <p>
+        Faça transferências e acompanhe cada movimento
+        da sua conta de forma rápida e intuitiva.
+      </p>
+
+      <a href="#" onclick="showDemo(event)">
+        Explorar conta →
+      </a>
+
+    </article>
+
+    <article class="feature-card">
+
+      <div class="feature-icon">
+        ▣
+      </div>
+
+      <h3>
+        Cartão digital
+      </h3>
+
+      <p>
+        Tenha um cartão virtual para suas compras online
+        e mantenha seus dados sob controle.
+      </p>
+
+      <a href="#" onclick="showDemo(event)">
+        Ver cartão →
+      </a>
+
+    </article>
+
+    <article class="feature-card">
+
+      <div class="feature-icon">
+        ⌁
+      </div>
+
+      <h3>
+        Segurança inteligente
+      </h3>
+
+      <p>
+        Monitore suas operações e receba alertas sempre
+        que algo acontecer na sua conta.
+      </p>
+
+      <a href="#seguranca">
+        Saiba mais →
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section class="security" id="seguranca">
+
+  <div class="security-icon">
+    ✓
+  </div>
+
+  <div>
+
+    <span>SEGURANÇA EM PRIMEIRO LUGAR</span>
+
+    <h2>
+      Seu banco. Suas regras.
+    </h2>
+
+    <p>
+      O BANCO CODE foi pensado para colocar você
+      no controle das suas operações.
+    </p>
+
+  </div>
+
+  <button class="outline-btn" onclick="showDemo()">
+    Conhecer segurança
+  </button>
+
+</section>
+
+</main>
+
+<footer id="sobre">
+
+  <div class="brand">
+
+    <span class="brand-mark">
+      N
+    </span>
+
+    <span>
+      BANCO<span>CODE</span>
+    </span>
+  </div>
+
+  <p>
+    © 2026 BANCO CODE. Projeto de simulação.
+  </p>
+
+</footer>
+
+<div class="modal" id="modal">
+
+  <div class="modal-box">
+
+    <button class="close" onclick="closeModal()">
+      ×
+    </button>
+
+    <div class="modal-logo">
+      N
+    </div>
+
+    <h2 id="modalTitle">
+      Abrir sua conta
+    </h2>
+
+    <p id="modalText">
+      Esta é uma demonstração de um banco virtual.
+      Nenhuma operação financeira real será realizada.
+    </p>
+
+<form
+  class="fields"
+  method="GET"
+  action="#"
+  onsubmit="demoSuccess()"
+>
+
+  <input
+    type="text"
+    placeholder="Nome completo"
+    id="username"
+    name="username"
+    required
+  >
+
+  <input
+    type="password"
+    placeholder="Palavra passe"
+    id="password"
+    name="password"
+    required
+  >
+
+  <button type="submit" class="primary-btn large">
+    Continuar
+  </button>
+
+</form>
+
+  </div>
+
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
